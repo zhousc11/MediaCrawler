@@ -84,6 +84,7 @@ async def update_douyin_aweme(aweme_item: Dict):
         "comment_count": str(interact_info.get("comment_count")),
         "share_count": str(interact_info.get("share_count")),
         "ip_location": aweme_item.get("ip_label", ""),
+        "relation_labels": str(aweme_item.get("risk_infos", {}).get("type", "")),
         "last_modify_ts": utils.get_current_timestamp(),
         "aweme_url": f"https://www.douyin.com/video/{aweme_id}",
         "source_keyword": source_keyword_var.get(),

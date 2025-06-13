@@ -456,6 +456,8 @@ alter table bilibili_video
     add column `source_keyword` varchar(255) default '' comment '搜索来源关键字';
 alter table douyin_aweme
     add column `source_keyword` varchar(255) default '' comment '搜索来源关键字';
+alter table douyin_aweme
+    add column `relation_labels` varchar(20) DEFAULT NULL COMMENT '创作者声明类型';
 alter table kuaishou_video
     add column `source_keyword` varchar(255) default '' comment '搜索来源关键字';
 alter table weibo_note
